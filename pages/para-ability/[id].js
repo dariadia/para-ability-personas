@@ -3,15 +3,15 @@ import useSwr from 'swr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-export default function User() {
+export default paraAbility = () => {
   const router = useRouter()
   const { data, error } = useSwr(
-    router.query.id ? `/api/user/${router.query.id}` : null,
+    router.query.id ? `/api/para-ability/${router.query.id}` : null,
     fetcher
   )
 
-  if (error) return <div>Failed to load user</div>
-  if (!data) return <div>Loading...</div>
+  if (error) return <div>Failed to load para-ability</div>
+  if (!data) return <div>Loading</div>
 
   return <div>{data.name}</div>
 }
