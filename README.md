@@ -10,8 +10,6 @@
 
 ##### ⚡️ I set out to create sample profiles on para-abilities for web-developers 🧑‍💻 and interested persons 💁.
 
-<br/>
-
 #### Including 🧑‍🦼
 - 🩺 short info on the para-ability,
 - 🙋 general advice on how to approach the person,
