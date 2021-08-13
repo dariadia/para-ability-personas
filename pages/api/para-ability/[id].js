@@ -1,6 +1,6 @@
 export default function paraAbilityHandler(req, res) {
   const {
-    query: { id, name },
+    query: { id },
     method,
   } = req
 
@@ -8,11 +8,8 @@ export default function paraAbilityHandler(req, res) {
     case 'GET':
       res.status(200).json({ id, name: `para-ability ${id}` })
       break
-    case 'PUT':
-      res.status(200).json({ id, name: name || `para-ability ${id}` })
-      break
     default:
-      res.setHeader('Allow', ['GET', 'PUT'])
+      res.setHeader('Allow', ['GET'])
       res.status(405).end(`Method ${method} Not Allowed`)
   }
 }
