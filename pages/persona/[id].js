@@ -3,7 +3,7 @@ import useSwr from 'swr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-export default persona = () => {
+export default function Persona() {
   const router = useRouter()
   const { data, error } = useSwr(
     router.query.id ? `/api/persona/${router.query.id}` : null,

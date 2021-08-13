@@ -3,7 +3,7 @@ import useSwr from 'swr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-export default paraAbility = () => {
+export default function ParaAbility() {
   const router = useRouter()
   const { data, error } = useSwr(
     router.query.id ? `/api/para-ability/${router.query.id}` : null,
