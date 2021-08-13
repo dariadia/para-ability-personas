@@ -1,4 +1,4 @@
-export default function userHandler(req, res) {
+export default function personaHandler(req, res) {
   const {
     query: { id, name },
     method,
@@ -6,12 +6,10 @@ export default function userHandler(req, res) {
 
   switch (method) {
     case 'GET':
-      // Get data from your database
-      res.status(200).json({ id, name: `User ${id}` })
+      res.status(200).json({ id, name: `persona ${id}` })
       break
     case 'PUT':
-      // Update or create data in your database
-      res.status(200).json({ id, name: name || `User ${id}` })
+      res.status(200).json({ id, name: name || `persona ${id}` })
       break
     default:
       res.setHeader('Allow', ['GET', 'PUT'])
