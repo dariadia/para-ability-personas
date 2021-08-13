@@ -1,18 +1,19 @@
+import paraAbilities from '../para-abilities.json'
+
 export default function paraAbilityHandler(req, res) {
   const {
-    query: { id, name },
+    query: { id },
     method,
   } = req
 
+  const paraAbility = paraAbilities.filter(item => item.id === id)[0]
+
   switch (method) {
     case 'GET':
-      res.status(200).json({ id, name: `para-ability ${id}` })
-      break
-    case 'PUT':
-      res.status(200).json({ id, name: name || `para-ability ${id}` })
+      res.status(200).json({ ...paraAbility })
       break
     default:
-      res.setHeader('Allow', ['GET', 'PUT'])
+      res.setHeader('Allow', ['GET'])
       res.status(405).end(`Method ${method} Not Allowed`)
   }
 }
