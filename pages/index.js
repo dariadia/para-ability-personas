@@ -9,12 +9,14 @@ export default function Index() {
   if (error) return <div>Failed to load personas</div>
   if (!data) return <div>Loading...</div>
 
+  console.log(data)
+
   return (
     <ul>
       {data.map((persona) => (
         <li key={persona.id}>
           <Link href="/persona/[id]" as={`/persona/${persona.id}`}>
-            <a>{`persona ${persona.id}`}</a>
+            <a>{persona.name}</a>
           </Link>
         </li>
       ))}
