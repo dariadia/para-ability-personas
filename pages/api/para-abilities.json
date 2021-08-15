@@ -28,7 +28,7 @@
       "confuses red and green items",
       "can tell apart blue and yellow"
     ],
-    "description": "decreased ability to see color or differences in color",
+    "description": "decreased ability to see colour or differences in colour",
     "kind": "physical",
     "name": "dichromacy",
     "id": "04f4df61-fff8-46a4-ab74-ce1ddd8e047c"
