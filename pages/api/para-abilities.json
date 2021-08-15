@@ -14,6 +14,7 @@
       "relies more on hearing rather than vision"
     ],
     "description": "blind or have partial vision",
+    "emoji": "👓",
     "kind": "physical",
     "name": "vision impairment",
     "id": "fb356c96-532d-4497-b36f-5e1c713eb5e8"
@@ -29,6 +30,7 @@
       "can tell apart blue and yellow"
     ],
     "description": "decreased ability to see colour or differences in colour",
+    "emoji": "👁",
     "kind": "physical",
     "name": "dichromacy",
     "id": "04f4df61-fff8-46a4-ab74-ce1ddd8e047c"
@@ -47,6 +49,7 @@
     ],
     "behaviour_patterns": null,
     "description": "a type of brain damage that occurs after birth. The injury may occur because of infection, disease, lack of oxygen or a trauma to the head.",
+    "emoji": "🧠",
     "kind": "physical",
     "name": "acquired brain injury",
     "id": "314321d5-9625-4a3c-b5cc-54c49427d2a0"
