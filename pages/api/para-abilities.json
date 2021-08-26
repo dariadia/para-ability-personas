@@ -4,11 +4,14 @@
       "always identify yourself and any others with you",
       "ask if the person requires assistance and listen for specific instructions"
     ],
-    "advice_web": [
-      "use HTML tags corresponding their functions",
-      "use area labels to guide screen readers",
-      "add descriptive alt tags to images"
-    ],
+    "advice_web": {
+      "do": [
+        "use HTML tags <a href='https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML' target='_blank'>corresponding their functions</a>",
+        "use <a href='https://www.w3.org/TR/wai-aria/#aria-label' target='_blank'>aria labels</a> to guide screen readers",
+        "add <a href='https://moz.com/learn/seo/alt-text' target='_blank'>descriptive alt tags</a> to images"
+      ],
+      "do_not": null
+    },
     "behaviour_patterns": [
       "highly likely using a screen reader",
       "relies more on hearing rather than vision"
