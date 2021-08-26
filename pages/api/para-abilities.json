@@ -7,10 +7,14 @@
     "advice_web": {
       "do": [
         "use HTML tags <a href='https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML' target='_blank'>corresponding their functions</a>",
-        "use <a href='https://www.w3.org/TR/wai-aria/#aria-label' target='_blank'>aria labels</a> to guide screen readers",
+        "use <a href='https://www.w3.org/TR/wai-aria/#aria-label' target='_blank'>ARIA labels</a> to guide screen readers",
+        "use the ARIA <a href=' https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role' target='_blank'>dialog role</a> on your popups/dropdowns",
         "add <a href='https://moz.com/learn/seo/alt-text' target='_blank'>descriptive alt tags</a> to images"
       ],
-      "do_not": null
+      "do_not": [
+        "avoid autoplay media: they might confuse the person, and they would not be able to switch them off",
+        "avoid stacking popups or other additional content: it confuses screen readers"
+      ]
     },
     "behaviour_patterns": [
       "highly likely using a screen reader",
