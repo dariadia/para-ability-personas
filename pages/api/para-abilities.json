@@ -4,11 +4,18 @@
       "always identify yourself and any others with you",
       "ask if the person requires assistance and listen for specific instructions"
     ],
-    "advice_web": [
-      "use HTML tags corresponding their functions",
-      "use area labels to guide screen readers",
-      "add descriptive alt tags to images"
-    ],
+    "advice_web": {
+      "do": [
+        "use HTML tags <a href='https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML' target='_blank'>corresponding their functions</a>",
+        "use <a href='https://www.w3.org/TR/wai-aria/#aria-label' target='_blank'>ARIA labels</a> to guide screen readers",
+        "use the ARIA <a href=' https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role' target='_blank'>dialog role</a> on your popups/dropdowns",
+        "add <a href='https://moz.com/learn/seo/alt-text' target='_blank'>descriptive alt tags</a> to images"
+      ],
+      "do_not": [
+        "avoid autoplay media: they might confuse the person, and they would not be able to switch them off",
+        "avoid stacking popups or other additional content: it confuses screen readers"
+      ]
+    },
     "behaviour_patterns": [
       "highly likely using a screen reader",
       "relies more on hearing rather than vision"
@@ -21,15 +28,19 @@
   },
   {
     "advice": null,
-    "advice_web": [
-      "avoid using colours from the green-red axis against each other",
-      "use different shapes to mark different options rather than only rely on different colours"
-    ],
+    "advice_web": {
+      "do": [
+        "use different shapes/icons to mark different options rather than only rely on different colours"
+      ],
+      "do_not": [
+        "avoid using colours from the green-red axis against each other: for this person, they look the same"
+      ]
+    },
     "behaviour_patterns": [
       "confuses red and green items",
       "can tell apart blue and yellow"
     ],
-    "description": "decreased ability to see colour or differences in colour",
+    "description": "decreased ability to see colour/differences in colour",
     "emoji": "👁",
     "kind": "physical",
     "name": "dichromacy",
@@ -42,11 +53,15 @@
       "minimise stress to maximise concentration and performance",
       "give verbal and written instructions or try giving examples to illustrate ideas and summarise ideas"
     ],
-    "advice_web": [
-      "keep site navigation simple and easy",
-      "keep a minimum of items on page",
-      "avoid unreasonable distractions alias bright decor or flashing buttons"
-    ],
+    "advice_web": {
+      "do": [
+        "keep navigation simple and easy",
+        "keep a minimum of items on page"
+      ],
+      "do_not": [
+        "avoid <b>unreasonable</b> distractions alias bright decor or flashing buttons"
+      ]
+    },
     "behaviour_patterns": null,
     "description": "a type of brain damage that occurs after birth. The injury may occur because of infection, disease, lack of oxygen or a trauma to the head.",
     "emoji": "🧠",

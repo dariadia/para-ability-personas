@@ -1,6 +1,6 @@
 {
   "name": "para-ability-personas",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "dariadia",
   "scripts": {
     "dev": "next",
